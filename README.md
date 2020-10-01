@@ -1,5 +1,34 @@
 # Set up terminals
 
+## Install WSL2 and Ubuntu
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+https://www.microsoft.com/store/apps/9n6svws3rx71
+
+## Install windows terminal
+
+https://www.microsoft.com/en-us/p/windows-terminal-preview/9n8g5rfz9xk3?activetab=pivot:overviewtab
+
+## Windows terminal settings
+
+Change `defaultProfile` to match Ubuntu GUID
+
+Add to `profiles`:
+
+  - In Ubuntu:
+    ```
+    "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\ross",
+    "colorScheme": "One Half Dark",
+    "fontFace": "Cascadia Mono PL",
+    "fontSoze": 12
+    ```
+ 
+  - In powershell
+    ```
+    "colorScheme": "Campbell Powershell"
+    ```
+
 ## Change computer name
 
 Settings ▸ System ▸ About ▸ Rename this PC
@@ -33,9 +62,9 @@ fi
 
 ## Add .vimrc
 
-Install powerline status:
+Install powerline status (requires python/pip):
 
-`pip install --user powerline-status`
+`pip3 install --user powerline-status`
 
 Add to `~./vimrc`
 ```
